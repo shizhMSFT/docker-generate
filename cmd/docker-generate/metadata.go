@@ -7,10 +7,12 @@ import (
 	"github.com/urfave/cli/v2"
 )
 
-var pluginMetadata = map[string]string{
-	"SchemaVersion": "0.1.0",
-	"Vendor":        "github.com/shizhMSFT",
-	"Version":       "0.1.0",
+var pluginMetadata = map[string]interface{}{
+	"SchemaVersion":    "0.1.0",
+	"Vendor":           "github.com/shizhMSFT",
+	"Version":          "0.1.0",
+	"ShortDescription": "Generate artifacts",
+	"Experimental":     true,
 }
 
 var metadataCommand = &cli.Command{
